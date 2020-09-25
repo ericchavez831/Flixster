@@ -22,9 +22,8 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 ### Notes
 Describe any challenges encountered while building the app.
 
-The biggest challenge while building the app was understanding the Android Studio IDE. I was not familiar with the needing to change the Pixel emulators to correspond 
-with the application. This caused an error that I was able to solve after half an hour of figuring out exactly what it meant. I also was struggling a little with
-working with the design view but got it to function properly after.
+The biggest challenge while building the app was understanding the Android Studio IDE. I was not familiar with the need to change the Pixel emulators to correspond 
+with the application. This caused an error that I was able to solve after half an hour of figuring out exactly what it meant. I also was struggling a little with the design view but got it to function properly after a few attempts.
 
 ### Open-source libraries used
 
