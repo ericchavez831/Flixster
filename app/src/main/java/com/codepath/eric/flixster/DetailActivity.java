@@ -2,6 +2,7 @@ package com.codepath.eric.flixster;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.RatingBar;
@@ -23,7 +24,7 @@ import okhttp3.Headers;
 
 public class DetailActivity extends YouTubeBaseActivity {
 
-    private static final String YOUTUBE_API_KEY = "AIzaSyCLR76kh3ROBmAJ-_ptZqU5kbcd2p04V9k";
+    private static final String YOUTUBE_API_KEY = BuildConfig.API_KEY;
     public static final String VIDEOS_URL = "https://api.themoviedb.org/3/movie/%d/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
 
     TextView tvTitle;

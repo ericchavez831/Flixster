@@ -1,5 +1,18 @@
 apply plugin: 'com.android.application'
 
+def apikeyPropertiesFile = rootProject.file("apikey.properties")
+def apikeyProperties = new Properties()
+apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+
+android {
+
+    defaultConfig {
+
+        // should correspond to key/value pairs inside the file
+        buildConfigField("String", "API_KEY", apikeyProperties['key'])
+    }
+}
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.1"
