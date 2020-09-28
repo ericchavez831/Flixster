@@ -3,17 +3,24 @@ package com.codepath.eric.flixster.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Parcel
 // Creating the Movie class in order to store the values needed for a movie object
 public class Movie {
 
+    int movieID;
     String backdropPath;
     String posterPath;
     String title;
     String overview;
+    double rating;
+
+    // empty constructor needed by the Parceler library
+    public Movie(){}
 
     // Takes it a JSON object which contains the info in the JSON format
     // Added exception to method signature, so that if any of the variable
@@ -23,7 +30,8 @@ public class Movie {
         posterPath = jsonObject.getString("poster_path");
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
-
+        rating = jsonObject.getDouble("vote_average");
+        movieID = jsonObject.getInt("id");
     }
 
     // Taking in the JSON and creating a list of Movies
@@ -63,5 +71,13 @@ public class Movie {
 
     public String getOverview() {
         return overview;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public int getMovieID() {
+        return movieID;
     }
 }
