@@ -50,7 +50,7 @@ with the application. This caused an error that I was able to solve after half a
 
 ### App Walkthough GIF
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="https://github.com/ericchavez831/Flixster/blob/master/Flixster2.gif?raw=true" width=250><br>
 
 ### Notes
 
